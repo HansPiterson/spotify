@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Neumorphism UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnail" id="thumbnail">
+            <img src="https://via.placeholder.com/150" alt="Music Thumbnail">
+        </div>
+        <div class="info" id="info">
+            <h3 id="title">Title</h3>
+            <p id="artist">Artist</p>
+            <p id="duration">Duration: 0:00</p>
+        </div>
+        <audio id="audio"></audio>
+        <div class="controls">
+            <button id="prevBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-skip-start-fill" viewBox="0 0 16 16">
+                    <path d="M4 4a1 1 0 0 1 1 1v2.51l5.698-3.647A.5.5 0 0 1 11 4.5v7a.5.5 0 0 1-.802.396L5 8.49V11a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h1z"/>
+                </svg>
+            </button>
+            <button id="playPauseBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="M11.596 8.697l-6.363 3.692A.5.5 0 0 1 4 11.892V4.108a.5.5 0 0 1 .733-.442l6.363 3.692a.5.5 0 0 1 0 .874z"/>
+                </svg>
+            </button>
+            <button id="nextBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
+                    <path d="M12 11a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v2.51L4.802 3.354A.5.5 0 0 0 4 3.5v9a.5.5 0 0 0 .802.396L10 8.49V11a1 1 0 0 0 1 1h1z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
